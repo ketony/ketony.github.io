@@ -6,32 +6,31 @@
 		<meta name="Keywords" content="ketony, digital solutions, web, app, mobile, applications, development" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,300" rel="stylesheet" type="text/css"><!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header id="header" class="container-fluid">
 			<div class="container">
 				<div id="logo" class="logo">ketony</div>
-				<nav class="collapse navbar-collapse" ng-controller="NavigationController">
+				<nav>
 					<ul class="nav navbar-nav">
-						<?php
-						foreach ($navigation as $key => $val) {
-							echo "<li ng-class=\"{ active: isActive('$val')}\"><a href=\"$val\">$key</a></li>\n";
-						}
-						?>
+						<li><a href="/">Home</a></li>
+						<li><a href="/contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
-		<div id="body" class="container" ng-view></div>
+		<div id="body" class="container">
+			<div class="jumbotron">
+				<h2>This is a test</h2>
+			</div>
+		</div>
 
-		<script src="vendor/jquery/dist/jquery.min.js"></script>
-		<script src="vendor/angular/angular.js"></script>
-		<script src="vendor/angular-route/angular-route.js"></script>
-		<script src="vendor/angular-resource/angular-resource.js"></script>
-		<script src="js/bundle.php"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	</body>
 </html>
